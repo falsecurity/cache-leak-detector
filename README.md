@@ -1,4 +1,4 @@
-# cacheleaktool
+# Cache Leak Detector
 
 This tool allows to detect instruction cache leaks in modular exponentiation software with instruction-level granularity. It is based on a simple and effective leakage test, which captures linear relations between the Hamming weight of the exponent and the number of executions per instruction. To obtain the instruction executions, the exponentiation software is observed during runtime with dynamic binary instrumentation.
 
