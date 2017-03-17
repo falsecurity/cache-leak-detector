@@ -1,0 +1,39 @@
+#------------------------------------------------------------------------
+# Project
+#------------------------------------------------------------------------
+
+PROJECT_NAME           = "Cache Leak Detector"
+PROJECT_BRIEF          = "Automatic Detection of Instruction Cache Leaks"
+OUTPUT_LANGUAGE        = English
+DOXYFILE_ENCODING      = UTF-8
+
+#------------------------------------------------------------------------
+# Build
+#------------------------------------------------------------------------
+
+LAYOUT_FILE            = ./layout.xml
+QUIET                  = YES
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES
+INPUT                  = ../README.md ../target ../pintool ../report
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.cpp *.h *.c *.py
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = NO
+ENABLE_PREPROCESSING   = YES
+
+#------------------------------------------------------------------------
+# Display
+#------------------------------------------------------------------------
+
+USE_MDFILE_AS_MAINPAGE = ../README.md
+INLINE_SOURCES         = YES
+TAB_SIZE               = 4
+ALIASES                = "license=@par License:\n"
+TYPEDEF_HIDES_STRUCT   = YES
+
